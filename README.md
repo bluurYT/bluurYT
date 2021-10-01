@@ -147,6 +147,7 @@ MainSection:NewButton("AntiAFK", "Makes localPlayer not disconnect", function()
     end)
     end)
     MainSection:NewButton("Redeem Twitter codes", "free shit aceept it", function()
+        end)
         wait(0.5)
 local A_1 = "UPDATE28"
 local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
@@ -303,6 +304,3 @@ wait(0.5)
 local A_1 = "UPDATE14"
 local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
 Event:InvokeServer(A_1)
-end
-end)
---enjoy
