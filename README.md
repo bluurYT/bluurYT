@@ -1,11 +1,13 @@
-if game.PlaceId ==5852812686 then
-end
+if game.PlaceId == 5490351219 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("ｵ Desire (Candy Clicking Simulator","Ocean")
-local Tab = Window:NewTab("Main")
-local Section = Tab:NewSection("Main")
+local Window = Library.CreateLib("ｵ Desire (Clicker Madness!)", "Ocean")
 
-Section:NewButton("Anti-AFK", "Never get kicked for being idle", function()
+
+--Main
+local Main = Window:NewTab("Main")
+local Section = Main:NewSection("Main")
+
+Section:NewButton("Anti-AFK", "No disconnect!", function()
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -13,656 +15,456 @@ Section:NewButton("Anti-AFK", "Never get kicked for being idle", function()
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
 end)
-Section:NewButton("Promocodes","Redeem codes yes", function()
+Section:NewButton("Go VIP", "!", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(518.599976, 15.5010281, -1342.40002, -0.998631716, 0, 0.0522932447, 0, 1, 0, -0.0522932447, 0, -0.998631716)
+end)
+Section:NewButton("Promo Codes", "Get exclusive items!", function()
     wait(0.5)
-local A_1 = "UPDATE28"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CodeService.Redeem:InvokeServer("RUSSO")
 wait(0.5)
-local A_1 = "10KLIKES"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CodeService.Redeem:InvokeServer("12KLIKES")
 wait(0.5)
-local A_1 = "UPDATE27"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CodeService.Redeem:InvokeServer("RobleRom")
 wait(0.5)
-local A_1 = "4MEVENT"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CodeService.Redeem:InvokeServer("RazorFishGaming")
 wait(0.5)
-local A_1 = "GODLY"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CodeService.Redeem:InvokeServer("Release")
 wait(0.5)
-local A_1 = "UPDATE26"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CodeService.Redeem:InvokeServer("Elsa")
 wait(0.5)
-local A_1 = "UPDATE25"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "HAPPYEASTER"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE24"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "OMEGA"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE21"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "PLUSHIE"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE20"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "TOFU"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "VALENTINES"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "HEARTS"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE18"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "18KFAVORITES"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "5KLIKES"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "NUKE"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "2MEVENT"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "2MEGG"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE16"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE15"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "RELEASE"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "CAM"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "CANDY"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "1kfavorites"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "300Likes"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "Update2"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "Event"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "100kVisits"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "Update3"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "1MVISITS"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE10"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "3KLIKES"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE12"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE13"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "UPDATE14"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
 end)
 
-Section:NewButton("Free Pets","Redeem pets yes", function()
-    wait(0.5)
-local A_1 = "12KLIKES"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "FREEIMPOSTER"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "CANDYLORDPET"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "VALENTINESPET"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "SUPERCANDYPET"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "LEGENDARYPET"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-wait(0.5)
-local A_1 = "FreePet"
-local Event = game:GetService("ReplicatedStorage").Events.RedeemCode
-Event:InvokeServer(A_1)
-end)
-
-local Tab = Window:NewTab("Auto Farm")
+local Tab = Window:NewTab("Autofarm")
 
 local Section = Tab:NewSection("Auto Click")
 
-Section:NewToggle("Auto Click", "Auto Clicks For You", function(state)
+Section:NewToggle("AutoClick", "make bobux go brr", function(state)
     if state then
         getgenv().farmer = true;
-        while wait do
-            if getgenv().farmer == true then
-                game:GetService("ReplicatedStorage").Events.ClickEvent:InvokeServer()
-                
-            end
-        end
+while wait() do
+    if getgenv().farmer == true then
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer("1")
+end
+end
     else
         getgenv().farmer = false;
+while wait() do
+    if getgenv().farmer == true then
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer("1")
+end
+end
+    end
+end)
+
+local Section = Tab:NewSection("Boss AutoFarm")
+
+Section:NewToggle("Autofarm Boss", "big xp ez", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(799.182739, 5.85324478, -260.70813, 0.978142142, -0.0021191542, -0.207926601, 0.00217329664, 0.999997616, 3.19531682e-05, 0.207926035, -0.000483140931, 0.978144407)
+getgenv().farmer = true;
+while wait() do
+    if getgenv().farmer == true then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CursorCannonService.FireBoss:FireServer("Karen Keyboard")
+    end
+end
+    else
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(554.441528, 4.21923256, -353.808472, 0.398127973, -0, -0.917329907, 0, 1, -0, 0.917329907, 0, 0.398127973)
+getgenv().farmer = false;
+while wait() do
+    if getgenv().farmer == true then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.CursorCannonService.FireBoss:FireServer("Karen Keyboard")
+    end
+end
+
+    end
+end)
+
+local Section = Tab:NewSection("Auto Beast Mode")
+
+Section:NewToggle("Auto Beast + click", "very op trust", function(state)
+    if state then
+        getgenv().farm = true
+while wait() do
+    if getgenv().farm == true then
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.BeastModeService.Begin:FireServer()
+
+end
+end
+    else
+        getgenv().farm = false
         while wait() do
+            if getgenv().farm == true then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.BeastModeService.Begin:FireServer()
         end
+               getgenv().farmer = false
+        while wait() do
             if getgenv().farmer == true then
-                game:GetService("ReplicatedStorage").Events.ClickEvent:InvokeServer()
-            end
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer("1")
         end
-    end)
-
-
-    local Section = Tab:NewSection("Boss AutoFarm")
-
-    Section:NewToggle("Farm Boss", "Autofarm Boss", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2645.04053, 993.755005, 1881.38867, 4.29153442e-05, -0.984804988, 0.173663557, 1, 4.29153442e-05, -3.75509262e-06, -3.75509262e-06, 0.173663557, 0.984805048)
-            wait()
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3026.2959, 995.314087, 2074.95508, -0.422592998, -0, -0.906319618, 0, -1, 0, -0.906319618, 0, 0.422592998)
-            wait()
-            end
         end
-    end)
-    local Section = Tab:NewSection("Rebirth Options")
-
-    Section:NewToggle("1", "Rebirths Once", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 1
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 1
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("5", "Rebirths 5 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 5
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            wait()
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 5
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            wait()
-            end
-        end
-    end)
-    
-    Section:NewToggle("15", "Rebirths 15 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 15
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 15
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("25", "Rebirths 25 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 25
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 25
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("50", "Rebirths 50 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 50
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 50
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("100", "Rebirths 100 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 100
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 100
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("500", "Rebirths 500 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 500
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 500
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("1k", "Rebirths 1000 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 1000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 1000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("2.5k", "Rebirths 2500 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 2500
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 2500
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("5k", "Rebirths 5000 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 5000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 5000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("10k", "Rebirths 10000 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 10000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 10000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("25k", "Rebirths 25000 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 25000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 25000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("50k", "Rebirths 50000 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 50000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 50000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-    
-    Section:NewToggle("100k", "Rebirths 1000000 times", function(state)
-        if state then
-            _G.Condition = true -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 100000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        else
-            _G.Condition = false -- true turns it on, false turns it off
-            while _G.Condition == true do
-            local A_1 = 100000
-            local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-            Event:InvokeServer(A_1)
-            end
-        end
-    end)
-
-    local Tab = Window:NewTab("Shop Upgrades")
-local Section = Tab:NewSection("Buy Shop Upgrades")
-
-Section:NewToggle("Player Speed", "Speed", function(state)
-    if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "PlayerSpeed"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
-    else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "PlayerSpeed"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        end 
     end
 end)
 
-Section:NewToggle("Jump Power", "Speed", function(state)
+local Section = Tab:NewSection("Auto PickUp")
+Section:NewToggle("AutoPickUp", "yes", function(state)
     if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "JumpPower"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().autopickup = true
+while wait() do
+    if getgenv().autopickup == true then
+        game:GetService("Workspace").ScriptObjects.BasePickup.HumanoidRootPart.CFrame = CFrame.new.LocalPlayer
+end
+end
     else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "JumpPower"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().autopickup = false
+while wait() do
+    if getgenv().autopickup == true then
+        game:GetService("Workspace").ScriptObjects.BasePickup.HumanoidRootPart.CFrame = CFrame.new(527.820679, 8.61664009, -384.444092, 0.667936862, 1.6815779e-08, 0.744217932, 4.50804265e-08, 1, -6.30549977e-08, -0.744217932, 7.56664207e-08, 0.667936862)
+end
+end
     end
 end)
 
-Section:NewToggle("Rebirth Options", "More Rebirth Options", function(state)
+local Teleports = Window:NewTab("Teleports")
+
+local Teleports = Teleports:NewSection("Teleports")
+
+Teleports:NewButton("Main Island", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(554.441528, 4.21923256, -353.808472, 0.398127973, -0, -0.917329907, 0, 1, -0, 0.917329907, 0, 0.398127973)
+end)
+Teleports:NewButton("Desert", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2288.66113, 7.36253929, 1087.66602, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Winter", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2195.28003, 6.46062994, 409.998016, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Lava", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1690.38525, 7.77716637, -734.648865, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Ocean", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-258.018005, 9.72535324, 2065.25439, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Candy", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1418.74072, 9.27518654, -2243.14648, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Space", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2394.43408, 7.40711641, 2861.37256, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Forest", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1838.47925, 8.35549545, 3260.10547, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("City", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-888.616638, 7.70115376, 1026.44592, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Blocks", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2997.47729, 11.1703444, -782.602905, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Future", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1142.82349, 9.54701519, 519.403564, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Infinity", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2160.427, 8.20108604, -1764.58118, 0.917312562, 0, 0.398167908, 0, 1, 0, -0.398167908, 0, 0.917312562)
+end)
+Teleports:NewButton("Moon", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2394.43408, 7.40711641, 1899.26257, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Fire", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2192.76514, 7.77716637, -734.648865, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Storm", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-283.451447, 8.89227104, -2593.82104, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Teleports:NewButton("Dominus", "Teleports to it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1114.78931, 8.35549545, 2254.00562, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+local RebirthUpgrades = Window:NewTab("RebirthUpgrades")
+
+local RebirthUpgrades = RebirthUpgrades:NewSection("RebirthUpgrades")
+
+RebirthUpgrades:NewButton("ClickMultiply", "yh", function()
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade:FireServer("ClickMultiply");
+end)
+RebirthUpgrades:NewButton("CursorDamage", "yh", function()
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade:FireServer("CursorDamage");
+end)
+RebirthUpgrades:NewButton("Health", "yh", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade:FireServer("Health");
+end)
+RebirthUpgrades:NewButton("JumpPower", "yh", function()
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade:FireServer("JumpPower");
+end)
+RebirthUpgrades:NewButton("Pet Storage", "yh", function()
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade:FireServer("PetStorage")
+end)
+RebirthUpgrades:NewButton("Speed Upgrade", "yh", function()
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.UpgradeService.BuyUpgrade:FireServer("WalkSpeed")
+end)
+
+local AutoRebirth = Window:NewTab("AutoRebirth")
+
+local AutoRebirth = AutoRebirth:NewSection("AutoRebirth")
+
+AutoRebirth:NewToggle("1 Rebirth", "yh", function(state)
     if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "RebirthButton"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = true
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("1")
+  end
+end
     else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "RebirthButton"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("1")
+  end
+end
+    end
+end)
+AutoRebirth:NewToggle("Rebirth 10", "yh", function(state)
+    if state then
+        getgenv().rebirth = true
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("10")
+  end
+end
+
+    else
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("10")
+  end
+end
     end
 end)
 
-Section:NewToggle("Gems Boost", "Gives More Gems", function(state)
+AutoRebirth:NewToggle("Rebirth 100", ":(", function(state)
     if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "MoreGems"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = true
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("100")
+  end
+end
+
     else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "MoreGems"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("100")
+  end
+end
+
     end
 end)
 
-Section:NewToggle("Luck Boost", "More Luck", function(state)
+AutoRebirth:NewToggle("Rebirth 1,000", "a", function(state)
     if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "LuckBoost"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = true
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("1000")
+  end
+end
+
     else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "LuckBoost"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth == true then
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer("1000")
+  end
+end
+
     end
 end)
 
-Section:NewToggle("More Pet XP", "Gives More", function(state)
+AutoRebirth:NewToggle("Rebirth 10,000", "op", function(state)
     if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "MorePetXP"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = true
+        while wait() do
+            if getgenv().rebirth == true then
+            
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000)
+            end
+            end
     else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "MorePetXP"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+
+            getgenv().rebirth = false
+            while wait() do
+                if getgenv().rebirth == true then
+                
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000)
+                end
+                end
     end
 end)
 
-Section:NewToggle("Pet Equip", "Equip More Pets", function(state)
+AutoRebirth:NewToggle("Rebirth 100K", "e", function(state)
     if state then
-        _G.Condition = true -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "PetEquip"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
-        end
+        getgenv().rebirth = true
+while wait() do
+    if getgenv().rebirth then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000)
+    end
+end
     else
-        _G.Condition = false -- true turns it on, false turns it off
-        while _G.Condition == true do
-        local A_1 = "PetEquip"
-        local A_2 = "BuyAll"
-        local Event = game:GetService("ReplicatedStorage").Events.Upgrade
-        Event:InvokeServer(A_1, A_2)
+        getgenv().rebirth = false
+        while wait() do
+            if getgenv().rebirth then
+                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(100000)
+            end
         end
     end
 end)
+AutoRebirth:NewToggle("Rebirth 1Mil", "haha", function(state)
+    if state then
+        
+        getgenv().rebirth = true
+        while wait() do
+            if getgenv().rebirth then
+                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000)
+            end
+        end
+    else
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000)
+    end
+end
 
-local Tab = Window:NewTab("Misc.")
-local Section = Tab:NewSection("Miscellaneous")
+    end
+end)
+AutoRebirth:NewToggle("Rebirth 10Mil", "ToggleInfo", function(state)
+    if state then
+        getgenv().rebirth = true
+        while wait() do
+            if getgenv().rebirth then
+                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000)
+            end
+        end
+          
+    else
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000)
+    end
+end
 
-Section:NewSlider("WalkSpeed", "Modifies the Walk Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    end
+end)
+
+AutoRebirth:NewToggle("Rebirth 100Mil", "a", function(state)
+    if state then
+        getgenv().rebirth = true
+while wait() do
+    if getgenv().rebirth then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(10000000)
+    end
+end
+    else
+        getgenv().rebirth = false
+while wait() do
+    if getgenv().rebirth then
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(1000000)
+    end
+end
+
+    end
+end)
+
+
+local OpenEgg = Window:NewTab("OpenEgg")
+
+local OpenEgg = OpenEgg:NewSection("OpenEgg")
+
+OpenEgg:NewButton("Basic", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("basic");
+end)
+OpenEgg:NewButton("Lava", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("lava");
+end)
+OpenEgg:NewButton("Desert", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("desert");
+end)
+OpenEgg:NewButton("Winter", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("winter");
+end)
+OpenEgg:NewButton("Ocean", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("ocean");
+end)
+OpenEgg:NewButton("Candy", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("candy");
+end)
+OpenEgg:NewButton("Space", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("space");
+end)
+OpenEgg:NewButton("Forest", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("forest");
+end)
+OpenEgg:NewButton("City", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("city");
+end)
+OpenEgg:NewButton("Blocks", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("blocks");
+end)
+OpenEgg:NewButton("Future", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("future");
+end)
+OpenEgg:NewButton("Infinity", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("infinity");
+end)
+OpenEgg:NewButton("Moon", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("moon");
+end)
+OpenEgg:NewButton("Fire", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("fire");
+end)
+OpenEgg:NewButton("Storm", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("storm");
+end)
+OpenEgg:NewButton("Dominus", "basic", function()
+    game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer("dominus");
+end)
+
+
+
+
+
+local Misc = Window:NewTab("Misc")
+
+local Misc = Misc:NewSection("Misc")
+
+Misc:NewSlider("WalkSpeed", "SliderInfo", 500, 16, function(s) 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Section:NewSlider("Jump Power", "Modifies the Jump Power", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+Misc:NewSlider("JumpPower", "SliderInfo", 500, 50, function(s) 
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Section:NewButton("Ctrl Click Teleport", "I dont know what to put here :p", function()
-    local Plr = game:GetService("Players").LocalPlayer
-    local Mouse = Plr:GetMouse()
-    Mouse.Button1Down:connect(function()
-    if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
-    if not Mouse.Target then return end
-    Plr.Character:MoveTo(Mouse.Hit.p)
-    end)
+Misc:NewButton("Click TP Tool", "y", function()
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
-local Tab = Window:NewTab("Credits")
-local Section = Tab:NewSection("Scripts - Made By Desire")
+
+
+local Credits = Window:NewTab("Credits")
+local Credits = Credits:NewSection("Made whole script")
+
+Credits:NewLabel("Desire/Rayha")
+end
