@@ -1,207 +1,128 @@
-wait(1)
-if game.PlaceId == 6075756195 then
+if game.PlaceId == 1224212277 then
+end
 
-local Codes = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local CodesGUI = Instance.new("ScreenGui")
+local Codes = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local ExecuteCodes = Instance.new("TextButton")
+local GameDetected = Instance.new("TextLabel")
+local Game = Instance.new("TextLabel")
+local Redeem = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
 
 --Properties:
 
+CodesGUI.Name = "CodesGUI"
+CodesGUI.Parent = game.CoreGui
+CodesGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 Codes.Name = "Codes"
-Codes.Parent = game.CoreGui
+Codes.Parent = CodesGUI
+Codes.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Codes.Position = UDim2.new(0.421999991, 0, -1, 0)
+Codes.Size = UDim2.new(0, 206, 0, 250)
+Codes.Draggable = true
+Codes.Active = true
 
-Frame.Parent = Codes
-Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-Frame.Position = UDim2.new(0.423636377, 0, 0.424314648, 0)
-Frame.Size = UDim2.new(0, 252, 0, 114)
-Frame.Draggable = true
-Frame.Active = true
-UICorner.Parent = Frame
+UICorner.Parent = Codes
 
-ExecuteCodes.Name = "ExecuteCodes"
-ExecuteCodes.Parent = Frame
-ExecuteCodes.BackgroundColor3 = Color3.fromRGB(115, 74, 54)
-ExecuteCodes.Position = UDim2.new(0.5, 0, 0.526315808, 0)
-ExecuteCodes.Size = UDim2.new(0, 108, 0, 29)
-ExecuteCodes.Font = Enum.Font.SourceSansBold
-ExecuteCodes.Text = "Execute Codes!"
-ExecuteCodes.TextColor3 = Color3.fromRGB(0, 0, 0)
-ExecuteCodes.TextScaled = true
-ExecuteCodes.TextSize = 14.000
-ExecuteCodes.TextWrapped = true
-ExecuteCodes.MouseButton1Down:connect(function()
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("400KMEMBERS");
+GameDetected.Name = "GameDetected"
+GameDetected.Parent = Codes
+GameDetected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameDetected.BackgroundTransparency = 1.000
+GameDetected.Position = UDim2.new(0.0530246459, 0, 0.140000001, 0)
+GameDetected.Size = UDim2.new(0, 200, 0, 50)
+GameDetected.Font = Enum.Font.SourceSansBold
+GameDetected.Text = "Game detected!😀"
+GameDetected.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameDetected.TextScaled = true
+GameDetected.TextSize = 14.000
+GameDetected.TextWrapped = true
+
+Game.Name = "Game"
+Game.Parent = Codes
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.Position = UDim2.new(0.144184098, 0, 0.34026432, 0)
+Game.Size = UDim2.new(0, 146, 0, 37)
+Game.Font = Enum.Font.SourceSansBold
+Game.Text = "🌎 Mad City"
+Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game.TextScaled = true
+Game.TextSize = 14.000
+Game.TextWrapped = true
+
+Redeem.Name = "Redeem"
+Redeem.Parent = Codes
+Redeem.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Redeem.Position = UDim2.new(0.0961538479, 0, 0.682819366, 0)
+Redeem.Size = UDim2.new(0, 168, 0, 46)
+Redeem.Font = Enum.Font.SourceSansBold
+Redeem.Text = "Redeem Codes"
+Redeem.TextColor3 = Color3.fromRGB(255, 255, 255)
+Redeem.TextScaled = true
+Redeem.TextSize = 14.000
+Redeem.TextWrapped = true
+Redeem.MouseButton1Click:Connect(function()
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","BILLYBOUNCE")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("4MILLIONVISITS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","0MGC0D3")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("2KLIKES");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","Ryguy")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("FREESERVERS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","D1$C0")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("TINYGEM ");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","Napkin")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("YOUTUBE");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","RealKreek")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("GEMS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","5K37CH")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("CLICKS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","Bandites")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("BUG FIXES");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","uNiQueEe BACON")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("400KVISITS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","KraoESP")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("TOXIC");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","0N3Y34R")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("CHEST");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","M4DC1TY")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("DAUNTLESS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","W33K3NDHYP3")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("100KMEMBERS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","T4L3N")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("SECRET");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","B3M1N3")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("TOXIN");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","S33Z4N2")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("CELEBRATE");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","STR33TL1N3")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("500KVISITS");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","S34Z4N3")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("BATTLE");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","TH1NKP1NK")
 	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("10KFAVORITES");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("LAVA");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("RELEASE");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("FIREWORKS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("SECRETEGG");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("POTION");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("1MVISITS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("200KVISITS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("600KVISITS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("VIP");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("3MILLIONVISITS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("POWERFUL");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("200KMEMBERS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE26");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("B4N");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("2MVISITS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("SPARKLETIME");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("THANKYOU");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("QUESTS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("HELL");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("28KMEMBERS");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("AUTOMATION");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE18");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE29");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("1M600K");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE10");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE17");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE13");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE25");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("VOID");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE27");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("XBOX");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("SPINTHEWHEEL");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("BOOST");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("8KLIKES");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("DEVELOPER");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("PATRIOT");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("MINI");
-	wait(0.5)
-	game:GetService("ReplicatedStorage").RedeemCode:FireServer("UPDATE24");
+	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("TwitterCode","S34Z4N4")	
 end)
-UICorner_2.Parent = ExecuteCodes
+UICorner_2.Parent = Redeem
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.103174604, 0, 0.0789473653, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 23)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Game = Clicking Havoc"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-Close.Name = "Close"
-Close.Parent = Frame
-Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Close.Position = UDim2.new(0.928571403, 0, -0.0789473653, 0)
-Close.Size = UDim2.new(0, 36, 0, 32)
-Close.Font = Enum.Font.SourceSans
-Close.Text = "Close Codes"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextScaled = true
-Close.TextSize = 14.000
-Close.TextStrokeColor3 = Color3.fromRGB(167, 167, 167)
-Close.TextWrapped = true
-
-UICorner_3.Parent = Close
-
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0, 0, 0.535087705, 0)
-TextLabel_2.Size = UDim2.new(0, 118, 0, 28)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "I'm READY!!!"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
--- Scripts:
-
-local function AGGNAHC_fake_script() -- Close.Script 
-	local script = Instance.new('Script', Close)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
+Exit.Name = "Exit"
+Exit.Parent = Codes
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.Position = UDim2.new(0.822255373, 0, -0.00350666046, 0)
+Exit.Size = UDim2.new(0, 36, 0, 32)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
+Exit.MouseButton1Click:Connect(function()
+wait(0.3)
+Codes:TweenPosition(UDim2.new(0.421999991, 0, -1.28400004, 0))
+	wait(3)
 	end)
-	
-end
-coroutine.wrap(AGGNAHC_fake_script)()
-end
+	UICorner_3.Parent = Exit
+
+
+wait(1)
+Codes:TweenPosition(UDim2.new(0.452, 0,0.32, 0))
