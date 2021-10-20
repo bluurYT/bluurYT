@@ -1,5 +1,4 @@
 if game.PlaceId == 1224212277 then
-end
 
 local CodesGUI = Instance.new("ScreenGui")
 local Codes = Instance.new("Frame")
@@ -126,3 +125,4 @@ Codes:TweenPosition(UDim2.new(0.421999991, 0, -1.28400004, 0))
 
 wait(1)
 Codes:TweenPosition(UDim2.new(0.452, 0,0.32, 0))
+end
