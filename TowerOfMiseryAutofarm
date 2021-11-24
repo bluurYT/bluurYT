@@ -74,5 +74,4 @@ TextButton_2.MouseButton1Down:connect(function()
 		end
 	end
 end)
-end)
 UICorner_3.Parent = TextButton_2
