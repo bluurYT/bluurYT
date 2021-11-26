@@ -1,0 +1,86 @@
+-- GUI made by evildylann on roblox and xyne on yt
+wait(0.5)
+
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Script loaded";
+ Text = "script made by xyne uwu";
+ Icon = "";
+ Duration = 5;
+ 
+})
+
+local Scripts = Instance.new("ScreenGui")
+local Ragerunners = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local RUN = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local STOP = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+--
+
+Scripts.Name = "Scripts-"
+Scripts.Parent = game.CoreGui
+Scripts.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Ragerunners.Name = "Rage runners"
+Ragerunners.Parent = Scripts
+Ragerunners.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Ragerunners.Position = UDim2.new(0.36150521, 0, 0.338268787, 0)
+Ragerunners.Size = UDim2.new(0, 341, 0, 113)
+Ragerunners.Active = true 
+Ragerunners.Draggable = true
+
+TextLabel.Parent = Ragerunners
+TextLabel.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextLabel.Size = UDim2.new(0, 341, 0, 42)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Tower Of Misery AutoFarm"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+RUN.Name = "RUN"
+RUN.Parent = Ragerunners
+RUN.BackgroundColor3 = Color3.fromRGB(174, 255, 53)
+RUN.Position = UDim2.new(0.0405797102, 0, 0.486725658, 0)
+RUN.Size = UDim2.new(0, 96, 0, 49)
+RUN.Font = Enum.Font.SourceSans
+RUN.Text = "Run"
+RUN.TextColor3 = Color3.fromRGB(0, 0, 0)
+RUN.TextScaled = true
+RUN.TextSize = 14.000
+RUN.TextWrapped = true
+RUN.MouseButton1Down:connect(function()
+	_G.farmer = true
+	while wait() do
+		if _G.farmer == true then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-118.976822, 257.000275, 48.8240356, 0, -1, -0, -1, 0, -0, 0, 0, -1)
+		end
+	end
+
+end)
+UICorner.Parent = RUN
+
+STOP.Name = "STOP"
+STOP.Parent = Ragerunners
+STOP.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+STOP.Position = UDim2.new(0.612427235, 0, 0.486725658, 0)
+STOP.Size = UDim2.new(0, 96, 0, 49)
+STOP.Font = Enum.Font.SourceSans
+STOP.Text = "Stop"
+STOP.TextColor3 = Color3.fromRGB(0, 0, 0)
+STOP.TextScaled = true
+STOP.TextSize = 14.000
+STOP.TextWrapped = true
+STOP.MouseButton1Down:connect(function()
+	_G.farmer = false
+	while wait() do
+		if _G.farmer == true then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-118.976822, 257.000275, 48.8240356, 0, -1, -0, -1, 0, -0, 0, 0, -1)
+		end
+	end
+
+end)
+UICorner_2.Parent = STOP
