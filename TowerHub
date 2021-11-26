@@ -1,0 +1,207 @@
+--xyne
+
+local Youswear = Instance.new("ScreenGui")
+local KeySystem = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Submit = Instance.new("TextButton")
+local Hub = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local LoadTowerOM = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local LoadTOJ = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Destroy = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+Youswear.Name = "You swear"
+Youswear.Parent = game.CoreGui
+Youswear.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+KeySystem.Name = "KeySystem"
+KeySystem.Parent = Youswear
+KeySystem.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+KeySystem.Position = UDim2.new(0.454602718, 0, 0.179677814, 0)
+KeySystem.Size = UDim2.new(0, 355, 0, 472)
+KeySystem.Draggable = true
+KeySystem.Active = true
+
+UICorner.Parent = KeySystem
+
+TextBox.Parent = KeySystem
+TextBox.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextBox.Position = UDim2.new(0.0760563388, 0, 0.720339, 0)
+TextBox.Size = UDim2.new(0, 307, 0, 50)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.Text = "Key"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextLabel.Parent = KeySystem
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.149295762, 0, 0.0402542353, 0)
+TextLabel.Size = UDim2.new(0, 269, 0, 100)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "AutoFarm Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+ImageLabel.Parent = KeySystem
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.264788747, 0, 0.269067794, 0)
+ImageLabel.Size = UDim2.new(0, 166, 0, 162)
+
+Submit.Name = "Submit"
+Submit.Parent = KeySystem
+Submit.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Submit.Position = UDim2.new(0.216901407, 0, 0.864406765, 0)
+Submit.Size = UDim2.new(0, 200, 0, 50)
+Submit.Font = Enum.Font.SourceSansBold
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit.TextScaled = true
+Submit.TextSize = 14.000
+Submit.TextWrapped = true
+Submit.MouseButton1Down:connect(function()
+	if TextBox.Text == "xynelol" then
+		KeySystem.Visible = false
+		Hub.Visible = true
+	end
+end)
+
+Hub.Name = "Hub"
+Hub.Parent = Youswear
+Hub.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Hub.Position = UDim2.new(0.456494331, 0, 0.246592328, 0)
+Hub.Size = UDim2.new(0, 363, 0, 422)
+Hub.Visible = false
+Hub.Active = true
+Hub.Draggable = true
+
+UICorner_2.Parent = Hub
+
+TextLabel_2.Parent = Hub
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0165289249, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 353, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Game hub "
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Hub
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.24242425, 0, 0.135071084, 0)
+TextLabel_3.Size = UDim2.new(0, 165, 0, 38)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Tower Games "
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Hub
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0771349892, 0, 0.296208501, 0)
+TextLabel_4.Size = UDim2.new(0, 148, 0, 27)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Tower of misery"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+LoadTowerOM.Name = "Load-Tower OM"
+LoadTowerOM.Parent = Hub
+LoadTowerOM.BackgroundColor3 = Color3.fromRGB(5, 155, 255)
+LoadTowerOM.Position = UDim2.new(0.12396694, 0, 0.701421857, 0)
+LoadTowerOM.Size = UDim2.new(0, 109, 0, 37)
+LoadTowerOM.Font = Enum.Font.SourceSansBold
+LoadTowerOM.Text = "Load"
+LoadTowerOM.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadTowerOM.TextScaled = true
+LoadTowerOM.TextSize = 14.000
+LoadTowerOM.TextWrapped = true
+LoadTowerOM.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/bluurYT/bluurYT/main/TowerOfMisery", true))()
+end)
+UICorner_3.Parent = LoadTowerOM
+
+ImageLabel_2.Parent = Hub
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.Position = UDim2.new(0.12396694, 0, 0.395734608, 0)
+ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ImageLabel_3.Parent = Hub
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.Position = UDim2.new(0.614325106, 0, 0.395734608, 0)
+ImageLabel_3.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+TextLabel_5.Parent = Hub
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.548209369, 0, 0.296208501, 0)
+TextLabel_5.Size = UDim2.new(0, 148, 0, 27)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Tower Of Jump"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+LoadTOJ.Name = "Load-TOJ"
+LoadTOJ.Parent = Hub
+LoadTOJ.BackgroundColor3 = Color3.fromRGB(5, 155, 255)
+LoadTOJ.Position = UDim2.new(0.58953166, 0, 0.701421857, 0)
+LoadTOJ.Size = UDim2.new(0, 109, 0, 37)
+LoadTOJ.Font = Enum.Font.SourceSansBold
+LoadTOJ.Text = "Load"
+LoadTOJ.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadTOJ.TextScaled = true
+LoadTOJ.TextSize = 14.000
+LoadTOJ.TextWrapped = true
+LoadTOJ.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/bluurYT/bluurYT/main/TowerOfJump"))()
+end)
+UICorner_4.Parent = LoadTOJ
+
+Destroy.Name = "Destroy"
+Destroy.Parent = Hub
+Destroy.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Destroy.Position = UDim2.new(0.0771349818, 0, 0.874407649, 0)
+Destroy.Size = UDim2.new(0, 109, 0, 37)
+Destroy.Font = Enum.Font.SourceSansBold
+Destroy.Text = "Destroy UI"
+Destroy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Destroy.TextScaled = true
+Destroy.TextSize = 14.000
+Destroy.TextWrapped = true
+Destroy.MouseButton1Down:connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end)
+UICorner_5.Parent = Destroy
