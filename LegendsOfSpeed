@@ -1,0 +1,142 @@
+--New Frame Soon!--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Script Loading..";
+	Text = "The Frame Will Be loaded in abit.";
+	Icon = "";
+	Duration = 5;
+
+})
+
+wait(2.1)
+--Ui Library
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Gay Kids Hub!", "Midnight")
+
+---AutoFarm
+local Tab = Window:NewTab("AutoFarm")
+
+local Section = Tab:NewSection("Auto Grab Orbs")
+
+Section:NewToggle("AutoOrbs", "TP's local player to orbs", function(state)
+    if state then
+		getgenv().orbs = true
+		while wait() do
+			if getgenv().orbs == true then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").orbFolder.City["Yellow Orb"].outerOrb.CFrame
+		end
+		end
+    else
+        getgenv().orbs = false
+while wait() do
+    if getgenv().orbs == true then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").orbFolder.City["Yellow Orb"].outerOrb.CFrame
+end
+end
+    end
+end)
+
+local Section = Tab:NewSection("Auto Go In Hops")
+
+Section:NewToggle("AutoHop", "TP's to hop", function(state)
+    if state then
+		getgenv().hoop = true
+		while wait() do
+			if getgenv().hoop == true then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Hoops.Hoop.CFrame
+		end
+		end
+    else
+        getgenv().hoop = false
+while wait() do
+    if getgenv().hoop == true then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Hoops.Hoop.CFrame
+end
+end
+    end
+end)
+
+local Section = Tab:NewSection("End")
+--RaceOptions
+local Tab = Window:NewTab("RaceOptions")
+local Section = Tab:NewSection("AutoRace")
+
+Section:NewToggle("AutoRace", "Auto TPS you when theres a race", function(state)
+    if state then
+        getgenv().race = true
+while wait() do 
+    if getgenv().race == true then
+game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer("joinRace");
+end
+end
+    else
+        getgenv().race = false
+while wait() do 
+    if getgenv().race == true then
+game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer("joinRace");
+end
+end
+    end
+end)
+
+local Section = Tab:NewSection("Change WalkSpeed/JumpPower")
+
+Section:NewSlider("WalkSpeed", "Changes WalkSpeed", 800, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("JumpPower", "Changes JumpPower", 800, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+local Section = Tab:NewSection(" Finish Race")
+
+
+Section:NewButton("Grassland (Pls Read Info)", "This will Finish the race It's not automatic tho, working on it", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").raceMaps.Grassland.finishPart.CFrame
+end)
+
+Section:NewButton("Desert", ".", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").raceMaps.Desert.finishPart.CFrame
+end)
+
+Section:NewButton("Magma", ".", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").raceMaps.Magma.finishPart.CFrame
+end)
+
+local Section = Tab:NewSection("End")
+
+--Misc
+local Tab = Window:NewTab("Misc")
+
+local Section = Tab:NewSection("Redeem Codes")
+
+Section:NewButton("RedeemCodes", "Gives speed and gems", function()
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("speedchampion000");
+wait(0.5)
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("racer300");
+wait(0.5)
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("SPRINT250");
+wait(0.5)
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("hyper250");
+wait(0.5)
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("legends500");
+wait(0.5)
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("sparkles300");
+wait(0.5)
+game:GetService("ReplicatedStorage").rEvents.codeRemote:InvokeServer("Launch200w");
+end)
+local Section = Tab:NewSection("Get Chest")
+Section:NewButton("Get Chest", "500 Gems", function()
+    local args = {
+		[1] = "Golden Chest"
+	}
+	
+	game:GetService("ReplicatedStorage").rEvents.checkChestRemote:InvokeServer(unpack(args))	
+end)
+local Section = Tab:NewSection("End")
+--Settings
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+
+Section:NewKeybind("GUI Keybind", "i suck children", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
+local Section = Tab:NewSection("End")
